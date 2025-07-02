@@ -11,7 +11,6 @@ public class BaseTest {
     protected WebDriver driver;
 
     public void initializeDriver() {
-       // System.setProperty("webdriver.chrome.driver", "/FRAND_Avanue_Project_Staging_Test/Configuration/chromedriver.exe");
     	WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
