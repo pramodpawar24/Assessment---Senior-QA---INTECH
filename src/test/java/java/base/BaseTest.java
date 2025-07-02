@@ -8,7 +8,7 @@ public class BaseTest {
     protected WebDriver driver;
 
     public void initializeDriver() {
-        System.setProperty("webdriver.chrome.driver", "path_to_chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/FRAND_Avanue_Project_Staging_Test/Configuration/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
